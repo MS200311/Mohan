@@ -1,0 +1,196 @@
+.pg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+.fotcol {
+    width: 100%;
+    max-width: 831pt;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.cardgroup {
+    display: flex;
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    row-gap: 15pt;
+    
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+.cards {
+    border-radius: 10pt;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+}
+
+.sub, #subject2 {
+    border-radius: 10pt;
+    width: 120px;
+    height: 100px;
+}
+
+
+.msg {
+    border: 1pt solid black;
+    border-radius: 10pt;
+    width: 90%;
+    max-width: 300pt;
+    height: auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.named {
+    display: flex;
+    flex-direction: column;
+}
+
+#footerp {
+    font-size: 10pt;
+}
+
+
+.rec3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0px;
+}
+
+
+.mybnt {
+    display: flex;
+    padding-left: 15px;
+    width: 170pt;
+    height: 30pt;
+    border-radius: 0;
+    font-size: 12pt;
+    align-items: center;
+    border: 0;
+    transition:all ease-out 300ms;
+}
+
+.mybnt:hover {
+    border: 1px solid blue;
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+
+#msgtxt {
+    font-size: 20pt;
+}
+
+#bntcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#rec5
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0pt;
+}
+.rec
+{
+    display: flex;
+    left: 15px;
+    top: 80pt;
+    row-gap: 0;
+    flex-wrap: wrap;
+    position: fixed;
+}
+.rec4
+{
+    display: flex;
+    left: 15px;
+    top: 80pt;
+    row-gap: 0;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.breadcrumb {
+    font-size: small;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotcol {
+        width: 100%;
+    }
+
+    .cardgroup {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        max-width: 90%;
+    }
+
+    .msg {
+        width: 95%;
+    }
+
+    .mybnt {
+        width: 100%;
+        max-width: 150pt;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .cardgroup {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        max-width: 100%;
+    }
+
+    .msg {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .mybnt {
+        font-size: 10pt;
+        width: 100%;
+    }
+
+    #msgtxt {
+        font-size: 16pt;
+    }
+}
